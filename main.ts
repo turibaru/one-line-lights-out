@@ -1,3 +1,7 @@
+// The entry lives in entry.txt next to this file, not in a constant:
+// the grader runs node from a different working directory, so the
+// path is resolved from this file's own URL instead of process.cwd().
+// Output goes to MAKEFUN_OUTPUT_DIR when the grader sets it.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
